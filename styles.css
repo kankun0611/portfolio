@@ -1,0 +1,278 @@
+
+body{
+  margin: 0;
+}
+
+@media(max-width:1000px){
+  .body{
+    width: 50%;
+  }
+}
+
+.first{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+header{
+  background-color:brown;
+  
+  color:white;
+  
+  position: fixed;
+  width:100%;
+  top: 0;
+  height: 65px;
+  z-index:10;
+
+
+}
+
+
+
+.header-left{
+  float: left;
+  font-size: 12px;
+  margin-left: 10px;
+
+  
+
+}
+
+
+
+
+.header-right{
+  float: right;
+  
+}
+
+.header-right a:hover{
+  background-color:darkred;
+}
+
+
+
+.header-right a{
+  color: white;
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  float: left;
+  display: block;
+  text-decoration: none;
+  
+
+}
+
+.top-wrapper{
+  background-image: url(img/marinabay.jpg);
+  background-size: cover;
+  padding: 180px 0 100px 0;
+  color:white;
+  text-align: center;
+
+}
+
+
+.top-wrapper .container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
+@media (max-width:1000px){
+  .top-wrapper h1{
+    font-size: 32px;
+
+  }
+}
+
+@media(max-width:670px){
+  .icon{
+    width: 100%;
+  }
+
+}
+
+.top-wrapper h1{
+  opacity: 0.7;
+  letter-spacing: 5px;
+  font-size: 43px;
+  line-height: 40px;
+}
+
+.top-wrapper p{
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+
+.btn{
+  padding: 8px 24px;
+  border-radius: 4px;
+  opacity: 0.8;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover{
+  opacity: inherit;
+}
+
+.signup{
+  background-color:darkgreen;
+}
+
+.facebook{
+background-color: darkblue;
+}
+
+.twitter{
+  background-color:orange;
+  margin-left: 15px;
+}
+
+.btn-wrapper p{
+  margin-top: 16px;
+  margin-bottom: 20px;
+
+}
+
+
+.lesson-wrapper .heading h2{
+  padding-top: 80px;
+  padding-bottom:50px ;
+  text-align: center;
+  margin: 0;
+}
+
+
+@media(max-width:1000px){
+
+.icon{
+  width: 50%;
+  
+}
+
+}
+
+@media(max-width:670px){
+
+  .icon{
+    width: 50%;
+  }
+
+}
+
+
+.icon:hover{
+  opacity: 0.7;
+}
+
+
+.lesson-wrapper{
+  background-color:beige;
+  
+}
+
+
+.snsadds{
+  display: flex;
+  text-align: center;
+  width: 1650px;
+ 
+  
+  padding-bottom: 80px;
+  
+}
+
+.icon{
+  padding-left: 5%;
+  padding-right:5% ;
+  
+}
+
+.li{
+  border-radius: 22px;
+}
+
+
+
+.icon p{
+  margin-top: 15px;
+  font-size: 15px;
+  color: darkgrey;
+}
+
+.message-wrapper{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+}
+
+.heading h3{
+  font-weight: normal;
+  margin: 18.72 0;
+  color: rgb(39, 38, 43);
+
+}
+
+.message-wrapper .heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: rgb(39, 38, 43);
+}
+
+.heading h2{
+  font-weight:normal;
+
+}
+
+.message{
+  background-color: plum;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow:0 7px 0px 0 purple;
+  border-radius: 4%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.message:active{
+  box-shadow: none;
+ position: relative;
+ top: 7px;
+ bottom: 7px;
+ 
+
+}
+
+.message:hover{
+opacity: 0.7;
+  
+}
+
+.message-wrapper{
+  padding-bottom: 80px;
+  border-bottom:0.7px solid brown;
+}
+
+footer{
+  font-size: 11px;
+  color: dimgray;
+}
+
+footer p{
+  font-size: 12px;
+  
+}
