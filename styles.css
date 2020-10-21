@@ -246,4 +246,12 @@ footer p{
   
 }
 
+@media(max-width:320px){
+  body{
+    width:25vw;
+  }
+  
+}
+  
+
 
