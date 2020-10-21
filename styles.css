@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 
-@media(max-width:1200px){
+@media(max-width:px){
   .body{
     width: 50vw;
   }
