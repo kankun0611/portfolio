@@ -248,8 +248,8 @@ footer p{
 
 @media(max-width:320px){
   body{
-    width:25%;
-    height:50%;
+    width:100%;
+    height:100%;
   }
   
 }
