@@ -246,12 +246,17 @@ footer p{
   
 }
 
-@media(max-width:800px){
+@media(max-width:1000px){
   body{
-    color:red;
+    width:200%;
   }
   
 }
   
+@media(max-width:670px){
+body{
+  width:400%
+  }
+}
 
 
