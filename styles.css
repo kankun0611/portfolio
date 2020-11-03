@@ -1,86 +1,65 @@
 
 body{
   margin: 0;
+  padding: 0;
 }
 
-
+.top-wrapper{
+  table-layout: fixed;
+  overflow: hidden;
+}
 
 .first{
   text-decoration: none;
   color: white;
 }
 
-
-
 header{
   background-color:brown;
-  
   color:white;
-  
   position: fixed;
   width:100%;
   top: 0;
   height: 65px;
   z-index:10;
-
-
 }
-
-
 
 .header-left{
   float: left;
   font-size: 12px;
   margin-left: 10px;
-
-  
-
 }
-
-
-
 
 .header-right{
   float: right;
-  
 }
 
 .header-right a:hover{
   background-color:darkred;
 }
 
-
-
 .header-right a{
   color: white;
   line-height: 65px;
-  padding: 0 25px;
+  padding: 0 23px;
   display: block;
   float: left;
   display: block;
   text-decoration: none;
-  
-
 }
 
 .top-wrapper{
-  background-image: url(https://github.com/kankun0611/portfolio/blob/main/marinabay.jpg?raw=true);
+  background-image: url(marinabay.jpg);
   background-size: cover;
   padding: 180px 0 100px 0;
   color:white;
   text-align: center;
-
 }
-
 
 .top-wrapper .container{
-  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
 }
-
-
 
 .top-wrapper h1{
   opacity: 0.7;
@@ -93,7 +72,6 @@ header{
   margin-top: 16px;
   margin-bottom: 40px;
 }
-
 
 .btn{
   padding: 8px 24px;
@@ -126,50 +104,46 @@ background-color: darkblue;
 .btn-wrapper p{
   margin-top: 16px;
   margin-bottom: 20px;
-
 }
-
 
 .lesson-wrapper .heading h2{
   padding-top: 80px;
-  padding-bottom:50px ;
+  padding-bottom:7% ;
   text-align: center;
   margin: 0;
 }
-
-
-
-
 
 .icon:hover{
   opacity: 0.7;
 }
 
-
 .lesson-wrapper{
   background-color:beige;
-  
+  text-align: center;
 }
-
 
 .snsadds{
   display: flex;
   text-align: center;
-  width: 1650px;
- 
-  
   padding-bottom: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
   
 }
 
 .icon{
-  padding-left: 5%;
-  padding-right:5% ;
-  
+  padding-left: 0%;
+  padding-right :0%;
+  text-align: center;
+  width: 25%;
 }
 
 .li{
   border-radius: 22px;
+}
+
+.fa{
+  
 }
 
 
@@ -246,52 +220,188 @@ footer p{
   
 }
 
+#nav-drawer{
+  display: none;
+
+}
+
 @media(max-width:1000px){
-  body{
-    width:200%;
+  
+    .snsadds{
+     flex-wrap: wrap;
+    }
+
+     .icon{
+      display: table;
+      width: 49%;
+      padding-top: 10%; 
+   }
+
+   #nav-drawer{
+    display: none;
+  
   }
+  }
+
+@media(max-width:710px){
+
+  .top-wrapper .container{
+    border: 1px solid r
+  }
+
+
+
+.btn-wrapper{
+ flex-direction: column;
+}
+
+.top-wrapper h1,p{
+  text-align: le;
+}
+
+.or{
+  text-align: center;
+}
+
+.last{
+  text-align: center;
+}
+
+.snsadds{
+  flex-direction: column;
   
 }
+
+.icon{
+  width: 100%;
+}
+
+.icon p{
+  text-align: center;
+}
+
+.twitter{
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.header-right{
   
+  display: none;
+}
 
+.icon{
+   margin-top: 75px;
+}
 
-@media(max-width:670px){
-
-  body{
-  width:600%;
-  }
-
-
-  #humberger {
-    position: relative;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-  #humberger div {
-    position: absolute;
-    left: 0;
-    height: 4px;
-    width: 24px;
-    background-color: #444;
-    border-radius: 2px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-  #humberger div:nth-of-type(1) {
-    top: 0;
-  }
-  #humberger div:nth-of-type(2) {
-    top: 10px;
-  }
-  #humberger div:nth-of-type(3) {
-    bottom: 0;
-  }
-  
-  .snsadds{
-    display:flex;
-    flex-direction:column;
-  }
+#nav-drawer{
+  display: block;
+  padding:20px;
 
 }
+
+.top-wrapper h1{
+line-height: 135%;
+}
+
+.top-wrapper p{
+  line-height: 130%;
+}
+
+}
+
+  
+  
+
+#nav-drawer {
+  position: relative;
+  float: right;
+}
+
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background:honeydew;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 70%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: auto;
+  background: rgb(240, 248, 123);/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+  font-size: 130%;
+  line-height: 300%;
+  font-weight: bolder;
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+  border-right: 2px solid brown;
+  border-radius: 1%;
+}
+
+#nav-content a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
